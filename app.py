@@ -11,6 +11,8 @@ for index, mon in enumerate(data):
     print(index, ":", mon["name"]['english'])
 # Add a language choice feature and print the pokemons name based on the user input
 language = input("Choose a language")
+for mon in pokemon:
+    
 print(data[0])
 # Develop a function that creates a new list of pokemon based on the type the user searched for. If no pokemon was found of that type inform the user
 
