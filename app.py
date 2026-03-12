@@ -20,23 +20,22 @@ for mon in data:
     elif lang == "french":
         print(mon['name']['french'])
     elif lang == "chinese":
-        print(mon['name']['chinese'])   """ 
-
+        print(mon['name']['chinese']) 
+ """
 """ print(data[0]) """
 # Develop a function that creates a new list of pokemon based on the type the user searched for. If no pokemon was found of that type inform the user
+
 All = []
 ty = input("what type of pokemon do you want?")
 same = True
-for mon in type:
-    if mon["type"] == ty:
+for i in type:
+    if type['type'] == ty:
         same = True
-        All.append(mon)
-        print(All)
+        All.append(type['name']['english'])
     else:
         same = False
-        
 
-
+print(All)
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
 
 #For Leo/, help me come up with a clever final question, considering maybe showing all moves a pokemon has avaiable based on type
