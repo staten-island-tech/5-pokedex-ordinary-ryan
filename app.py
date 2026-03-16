@@ -33,11 +33,10 @@ same = True
 for i in type:
     if i['english'] == ty:
         same = True
-
     else:
         same = False
 for i in data:
-    while same == True:
+    if same == True:
         print(data['name']['english'])
 
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
