@@ -42,13 +42,14 @@ for i in type:
 same = True
 Highest_HP = []
 for mons in data:
-    if mons['type'] == ty:
+    if mons["type"] == ty:
         same = True
-        while same == True:
-            Highest_HP.append(mons['name']['english'])
+
+    if same == True:
+        print(mons['name']['english'])
+        break
     else:
         same = False
-    print(Highest_HP)
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
 
 #For Leo/, help me come up with a clever final question, considering maybe showing all moves a pokemon has avaiable based on type
