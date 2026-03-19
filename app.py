@@ -27,7 +27,7 @@ for mon in data:
 for index, ty in enumerate(type):
     print(index, ":", ty['english'])
 
-ty = input("what type of pokemon do you want?")
+
 """ same = True
 for i in type:
     if i['english'] == ty:
@@ -39,19 +39,17 @@ for i in type:
     while same == True:
             print(mon['name']['english']) """
 
-same = True
-Highest_HP = []
+ty = input("what type of pokemon do you want?")
 for mons in data:
-    if mons["type"] == ty:
-        same = True
-
-    if same == True:
+    if ty in mons['type']:
         print(mons['name']['english'])
-        break
-    else:
-        same = False
-#Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
 
+#Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
+char = input("what pokemon do you want to search for?")
+for mon in data:
+    if char in mon['name']['english']:
+        print(mon['name']['english'])
+   
 #For Leo/, help me come up with a clever final question, considering maybe showing all moves a pokemon has avaiable based on type
 
 """ Highest_HP = 0
