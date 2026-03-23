@@ -23,5 +23,5 @@ def slot(quart_count,mac1,mac2,mac3):
                 mac3 = 0
                 quart_count += 9
     
-    print(play_count)
-slot(48,3,10,4)
+    print("martha plays", play_count, "before going broke")
+slot(77,4,9,3)
