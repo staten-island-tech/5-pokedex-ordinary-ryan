@@ -33,6 +33,11 @@ for mons in data:
     if ty in mons['type']:
         print(mons['name']['english'])
 
+for monster in type:
+    if ty not in type:
+        print("not found")
+
+
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
 char = input("what pokemon do you want to search for?")
 for mon in data:
@@ -45,9 +50,4 @@ moves = input("what moves do you want to search for. input a type")
 for poke in mo:
     if moves == poke['type']:
         print(poke['ename'])
-""" Highest_HP = 0
-for mon in pokemon:
-    if mon['base']['HP'] > Highest_HP:
-        Highest_HP = mon['base']['HP']
-    print(Highest_HP) """
     
