@@ -33,9 +33,7 @@ for mons in data:
     if ty in mons['type']:
         print(mons['name']['english'])
 
-for monster in type:
-    if ty not in type:
-        print("not found")
+
 
 
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
