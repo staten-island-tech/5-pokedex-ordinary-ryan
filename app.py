@@ -27,23 +27,34 @@ for mon in data:
 for index, ty in enumerate(type):
     print(index, ":", ty['english'])
 
+def search():
+    right = []
 
-ty = input("what type of pokemon do you want?")
-for mons in data:
-    if ty in mons['type']:
-        print(mons['name']['english'])
+    ty = input("what type of pokemon do you want?")
+    for mons in data:
+        if ty in mons['type']:
+            right.append(mons['name']['english'])
+    if len(right) == 0:
+        print('no pokemon found')
+    else:
+        print(right)
+search()
 
-for monster in type:
-    if ty not in type:
-        print("not found")
+
 
 
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
 char = input("what pokemon do you want to search for?")
-for mon in data:
-    if char in mon['name']['english']:
-        print(mon['name']['english'])
-   
+def name():
+    poke = []
+    for mon in data:
+        if char in mon['name']['english']:
+            poke.append(mon['name']['english'])
+    if len(poke) == 0:
+        print('no pokemon found')
+    else:
+        print(poke)
+name()   
 #For Leo/, help me come up with a clever final question, considering maybe showing all moves a pokemon has avaiable based on type
 
 moves = input("what moves do you want to search for. input a type")
